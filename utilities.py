@@ -54,13 +54,13 @@ class CommonTableWidget(QTableWidget):
     def contextMenuEvent(self,event):
         menu = QMenu(self)
         add = QAction()
-        add.setText("选中")
+        add.setText("Select")
         add.triggered.connect(self.pApp.addSomeWords)
         copyAction = QAction()
-        copyAction.setText("复制")
+        copyAction.setText("Copy")
         copyAction.triggered.connect(self.CopyAction)
         clear = QAction()
-        clear.setText("清除选中项")
+        clear.setText("Clear selected items")
         clear.triggered.connect(self.Clear)
 
         menu.addAction(add)
@@ -92,13 +92,13 @@ class OriginVerbTableWidget(QTableWidget):
     def contextMenuEvent(self,event):
         menu = QMenu(self)
         add = QAction()
-        add.setText("查找")
+        add.setText("Find")
         add.triggered.connect(self.pApp.SearchButtonClickEvent)
         copyAction = QAction()
-        copyAction.setText("复制")
+        copyAction.setText("Copy")
         copyAction.triggered.connect(self.CopyAction)
         clear = QAction()
-        clear.setText("清除选中项")
+        clear.setText("Clear selected items")
         clear.triggered.connect(self.Clear)
         
         menu.addAction(add)
@@ -232,7 +232,7 @@ class CommonListWidget(QListWidget):
     def contextMenuEvent(self,event):
         menu = QMenu(self)
         action = QAction()
-        action.setText("选中")
+        action.setText("Select")
         action.triggered.connect(self.actionClicked)
         menu.addAction(action)
         menu.exec_(QtGui.QCursor.pos())
@@ -269,7 +269,7 @@ class ConstantWidget(QListWidget):
     def contextMenuEvent(self,event):
         menu = QMenu(self)
         action = QAction()
-        action.setText("选中")
+        action.setText("Select")
         action.triggered.connect(self.actionClicked)
         menu.addAction(action)
         menu.exec_(QtGui.QCursor.pos())

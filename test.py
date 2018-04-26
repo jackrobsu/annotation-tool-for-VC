@@ -129,7 +129,7 @@ class MyApp(QMainWindow):
             WidgetType.NOUN:"nounTab"
             }
 
-        self.contentTabs.resize(self.MainWindowWidth,400)
+        self.contentTabs.resize(self.MainWindowWidth,600)
 
         self.preButton = getButton("Last Sentence",width=140,event=self.preButtonClickedEvent)
         self.sureButton = getButton("Save",width=140,event=self.sureButtonClickedEvent)
@@ -180,7 +180,7 @@ class MyApp(QMainWindow):
         # self.setLayout(self.horizon)
 
         # self.setGeometry(300,300,300,150)
-        self.resize(self.MainWindowWidth,700)
+        self.resize(self.MainWindowWidth,800)
         self.center()
         # self.setWindowFlags(Qt.WindowMinimizeButtonHint|Qt.WindowCloseButtonHint)
         self.show()

@@ -1,0 +1,18 @@
+﻿@Coordinating Relation
+Coordinating#(Coordination,CoordinationA,CoordinationB)
+@Adversative Relation
+Adversative#(Adversative,Truth,AdverseTruth)
+@Successive Relation
+Successive#(Time,Time-Before,Time-After)
+Simultaneity#(Time,Time-Equal,Time-Equal)
+@Causal Relation
+Causal#(Causal,Cause,Effect)
+@Comparative Relation
+Comparative#(compare,stronger,baseDegree)
+Simultaneity#(compare,sameDegree,sameDegree)
+@Alternative Relation
+Alternative#(Mutual,choiceA,choiceB)
+@Conditional Relation
+Condition#(IF,condition,conclusion)
+real-Condition#(IF,real-condition,conclusion)
+unreal-Condition#(IF,unreal-condition,conclusion)
