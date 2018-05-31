@@ -8,7 +8,7 @@ This is an annotation tool for semantic representation VC.
  *contains PropBank's verb entries*
 * res --
  *contains resource files*
-* test.py --
+* annotationTool.py --
  *the topest class of this project which provides the whole GUI*
 * verbWidget.py --
  *provides the GUI for annotating verbs*
@@ -28,7 +28,7 @@ This is an annotation tool for semantic representation VC.
  *stores different tenses of common verbs*
  
 # Run 
-python3 test.py
+python3 annotationTool.py
 
 # Requirement
 python3<br>

@@ -252,7 +252,7 @@ class ConstantWidget(QListWidget):
         super().__init__()
         self.pWidget = pWidget
 
-        constants = ["None"]
+        constants = ["Null"]
         
         for constant in constants :
             item = CommonListWidgetItem(itemID=CONSTANT.noItemID)
@@ -557,10 +557,10 @@ def saveLexicon(obj,showWidget,tabwidget) :
 
     if obj.widgetType == WidgetType.CONJUNCTION :
         if content == "" :
-            QMessageBox.warning(obj,"警告","您还没有选择连词",QMessageBox.Ok,QMessageBox.Ok)
+            QMessageBox.warning(obj,"Warning","Please choose a conjunction",QMessageBox.Ok,QMessageBox.Ok)
             return
         if obj.conjunctionRole is None :
-            QMessageBox.warning(obj,"警告","您还没有选择相应的连词语义",QMessageBox.Ok,QMessageBox.Ok)
+            QMessageBox.warning(obj,"Warning","Please choose the corresponding discourse relations",QMessageBox.Ok,QMessageBox.Ok)
             return
       
             

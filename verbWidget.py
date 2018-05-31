@@ -352,7 +352,7 @@ class VerbWidget(QMainWindow,QObject):
                 self.SearchButtonClickEvent(directlyShow=True)
             # print(extractXML(verbs[0]))
         else:
-            QMessageBox.warning(self,"警告",self.tr("没有找到动词 {} 可能的现在时态").format(verb),QMessageBox.Ok,QMessageBox.Ok)
+            QMessageBox.warning(self,"Warning",self.tr("Sorry for not finding the base form of {}").format(verb),QMessageBox.Ok,QMessageBox.Ok)
             print("not found")
             
 
@@ -383,7 +383,7 @@ class VerbWidget(QMainWindow,QObject):
         if verbroles :
             self.showRoles(verbroles)
         else:
-            QMessageBox.warning(self,"警告",self.tr("没有找到动词 {} 对应的词条信息").format(verb),QMessageBox.Ok,QMessageBox.Ok)
+            QMessageBox.warning(self,"Warning",self.tr("Sorry for not finding semantic role frames of {} in PropBank").format(verb),QMessageBox.Ok,QMessageBox.Ok)
             print("not found in PropBank")
             
             

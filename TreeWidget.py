@@ -10,7 +10,7 @@ class TreeItem(QTreeWidgetItem):
     
 class Tree(QTreeWidget):  
   
-    def __init__(self, parent = None , mainWindow=None , windowIndex=0 , mutexAnyItem=False , callback=None , labels=[]):  
+    def __init__(self, parent = None , mainWindow=None , windowIndex=0 , mutexAnyItem=False , callback=None , labels=[] , multipleSelected=False):  
   
         super(Tree, self).__init__(parent)  
         self.mainWindow = mainWindow
@@ -30,6 +30,7 @@ class Tree(QTreeWidget):
         self.windowIndex = windowIndex
         self.mutexAnyItem = mutexAnyItem
         self.callback = callback
+        self.multipleSelected = multipleSelected
         # self.addTopLevelItem(root)
         # for s in ['foo', 'bar']:  
         #     MyTreeItem(s, self)  
@@ -84,7 +85,8 @@ class Tree(QTreeWidget):
             return
         if self.callback is not None :
             self.callback(WidgetItem)
-        Clear(clickedItemIndex,self)
+        if not self.multipleSelected :
+            Clear(clickedItemIndex,self)
         for treeWidget in self.mainWindow.trees :
             if treeWidget.windowIndex == self.windowIndex :
                 continue

@@ -1,0 +1,2 @@
+John shot Bill and he died.	result/b4cbcebb1912a329ebd0fc366c23227cfec60ef34599cd5209b89850e80db04b3e69f904.xml
+The bee landed on the flower because it had pollen.	result/32c7dd219ea12a810e94aa221cb1e583c458e366a2e692ca92829f095c07459420e33d19.xml

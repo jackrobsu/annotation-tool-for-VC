@@ -115,7 +115,7 @@ class ConjunctionWidget(QMainWindow,QObject):
 
 
     def addWidgetInRightWindow(self):
-        self.tree = Tree(self.rightWindow,self,mutexAnyItem=True,callback=self.callback,labels=['Relation','Description'])
+        self.tree = Tree(self.rightWindow,self,mutexAnyItem=True,callback=self.callback,labels=['Relation','Description'],multipleSelected=True)
         self.tree.setMinimumWidth(self.rightWindow.width())
         self.tree.setMinimumHeight(self.rightWindow.height())
         self.tree.setSizePolicy(QSizePolicy.Preferred,QSizePolicy.Preferred)  
@@ -146,8 +146,8 @@ class ConjunctionWidget(QMainWindow,QObject):
                         if len(arr) == 2 :
                             self.conjunctionDict[curConjunction].append(tuple(arr))
         except Exception :
-            print("加载连词资源文件出错,可能不存在该文件")
-            QMessageBox.warning(self,"错误","加载连词资源文件出错，可能不存在该文件",QMessageBox.Ok,QMessageBox.Ok)
+            # print("加载连词资源文件出错,可能不存在该文件")
+            QMessageBox.warning(self,"Error","Erroe when loading resource files, please check whether resource files exist.",QMessageBox.Ok,QMessageBox.Ok)
             sys.exit(0)
 
             # print(self.conjunctionTypes)
