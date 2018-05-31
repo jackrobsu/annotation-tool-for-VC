@@ -1,6 +1,9 @@
 # **annotation-tool-for-VC**
 This is an annotation tool for semantic representation VC.
 
+# ** Operation Demo **
+An operation demo is available in folder "video".
+
 # **Files Structure** 
 * datas --
  *contains data files to be annotated*
@@ -26,7 +29,7 @@ This is an annotation tool for semantic representation VC.
  *provides some useful functions*
 * noreg.txt --
  *stores different tenses of common verbs*
- 
+
 # Run 
 python3 annotationTool.py
 
